@@ -32,7 +32,7 @@ int main(){  //создаем динамический массив структур
        kettles.push_back(kettle);
     }
     inputFile.close();
-    cout << "Фирма\t\tМощность\tСерийный номер" << endl;
+    cout << "Фирма\t\tМощность\tСерийный номер";
 
     for (const auto& k: kettles){
        cout << k.brand << "\t\t" << k.power << "\t\t" << k.serialNumber << endl; // Находим индекс самого мощного чайника
