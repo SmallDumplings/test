@@ -1,0 +1,4 @@
+Brand1 1500 BORK
+Brand2 2000 Polaris
+Brand3 1200 Tefal
+Brand4 1000 Philips

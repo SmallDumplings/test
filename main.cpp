@@ -32,7 +32,7 @@ int main(){  //создаем динамический массив структур
        kettles.push_back(kettle);
     }
     inputFile.close();
-    cout << "Фирма\t\tМощность\tСерийный номер";
+    cout << "Фирма\t\tМощность\tСерийный номер" << endl;
 
     for (const auto& k: kettles){
        cout << k.brand << "\t\t" << k.power << "\t\t" << k.serialNumber << endl; // Находим индекс самого мощного чайника
@@ -47,7 +47,7 @@ int main(){  //создаем динамический массив структур
         ss << "Серийный номер" << k.serialNumber << endl;
         ss << endl;
     }
-    ofstream outputFile ("kettles_output.bin", ios::binary);
+    ofstream outputFile ("kettles_output.txt", ios::binary);
     const string& data = ss.str();
     outputFile.write (data.c_str(), data.size());
     outputFile.close();
